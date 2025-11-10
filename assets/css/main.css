@@ -1683,7 +1683,7 @@ section,
 .pilnas-video {
   width: 100%; 
   height: auto; 
-  display: block; 
+  border: none;
 }
 
 .services .service-header {
