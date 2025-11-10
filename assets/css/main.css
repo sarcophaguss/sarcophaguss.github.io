@@ -1680,6 +1680,12 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.pilnas-video {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
 .services .service-header {
   margin-bottom: 60px;
 }
