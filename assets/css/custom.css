@@ -1,0 +1,376 @@
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 1000;
+    line-height: 2;
+}
+
+h2 {
+    color: #98FFCC;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+h3 {
+    color: #5CC9F5;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h4 {
+    color: #C8A2FF;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+h5 {
+    color: #FFB8E8;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+h6 {
+    color: #FFF3A1;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 0.75;
+}
+
+p {
+    font-family: 'Garamond', serif;
+    font-size: medium;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+/* ============================================
+   BUTTONS (Hero & About Sections)
+   ============================================ */
+
+.hero .hero-actions .btn.btn-primary {
+    background-color: #ff0000;
+    border-color: #ff0000;
+    color: #000000;
+}
+
+.hero .hero-actions .btn.btn-primary:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+    color: #ffffff;
+}
+
+.hero .hero-actions .btn.btn-primary:active {
+    background-color: #000000;
+    border-color: #000000;
+    color: #000000;
+}
+
+.about .cta-section .btn.btn-primary {
+    background-color: #00ff00;
+    border-color: #00ff00;
+    color: #000000;
+}
+
+.about .cta-section .btn.btn-primary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #000000;
+}
+
+.about .cta-section .btn.btn-primary:active {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.about .contact-links .contact-item {
+    background-color: #5CC9F5;
+    border-color: #ffffff;
+    color: #000000;
+}
+
+.about .contact-links .contact-item:hover {
+    background-color: #C8A2FF;
+    border-color: #ffffff;
+    color: #000000;
+}
+
+.about .contact-links .contact-item:active {
+    background-color: #ff0000;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+/* ============================================
+   SECTIONS & SPACING
+   ============================================ */
+
+#about,
+#resume,
+#portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 123, 255, 0.1);
+}
+
+/* ============================================
+   CARDS & COMPONENTS
+   ============================================ */
+
+.resume-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+    background-color: #343a40;
+    transition: all 0.3s;
+}
+
+.resume-item:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.profile-card,
+.resume-side {
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #343a40;
+}
+
+.about-content {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-wrap {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.portfolio-wrap:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   SKILLS SECTION
+   ============================================ */
+
+.skills .skill-item .progress {
+    height: 15px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.skills .skill-item .progress .progress-bar {
+    background-color: #28a745;
+    border-radius: 4px;
+    transition: width 0.8s ease-in-out;
+}
+
+/* ============================================
+   ORDERED LISTS (Styled)
+   ============================================ */
+
+.styled-ol {
+    counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.styled-ol li {
+    counter-increment: item;
+    position: relative;
+    padding-left: 3.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.styled-ol li::before {
+    content: counters(item, ".") ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: linear-gradient(135deg, #5CC9F5 0%, #98FFCC 100%);
+    color: #0a0a0a;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.styled-ol li ol {
+    counter-reset: item;
+    margin-top: 0.35rem;
+}
+
+/* ============================================
+   UNORDERED LISTS (Styled)
+   ============================================ */
+
+.styled-ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.styled-ul li {
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.styled-ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.35rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: radial-gradient(circle at 35% 35%, #FFB8E8 0%, #C8A2FF 40%, #5CC9F5 100%);
+    border-radius: 0.35rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.styled-ul li ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.styled-ul li ul li::before {
+    width: 1rem;
+    height: 1rem;
+    top: 0.45rem;
+    left: 0.1rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FFF3A1 0%, #FFB8E8 100%);
+}
+
+/* ============================================
+   LIST FOCUS STATES
+   ============================================ */
+
+.styled-ol li:focus-within::before,
+.styled-ul li:focus-within::before {
+    outline: 3px solid rgba(88, 179, 255, 0.25);
+}
+
+/* ============================================
+   PRICING TABLE
+   ============================================ */
+
+.table-pricing {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.table-pricing th,
+.table-pricing td {
+    padding: 18px;
+    text-align: center;
+    border: 1px solid #343a40;
+}
+
+.table-pricing thead tr {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table-pricing thead th {
+    border: none;
+}
+
+.table-pricing tbody tr:nth-child(even) {
+    background-color: #2c3034;
+}
+
+.table-pricing tbody tr:nth-child(odd) {
+    background-color: #212529;
+}
+
+.table-pricing tbody tr:hover {
+    background-color: #1e7e34;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+}
+
+.table-pricing td:nth-child(2) {
+    text-align: left;
+    max-width: 350px;
+    font-size: 0.95em;
+    color: #ced4da;
+}
+
+.table-pricing td:nth-child(3) {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.table-pricing td:nth-child(1),
+.table-pricing td:nth-child(4) {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* ============================================
+   RESUME SECTION LAYOUTS
+   ============================================ */
+
+.resume-section {
+    margin-bottom: 40px;
+    padding-top: 10px;
+}

@@ -1,11 +1,3 @@
-/**
-* Template Name: SnapFolio
-* Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
-* Updated: Jul 21 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -19,8 +11,6 @@
     headerToggleBtn.classList.toggle('bi-list');
     headerToggleBtn.classList.toggle('bi-x');
   }
-  headerToggleBtn.addEventListener('click', headerToggle);
-
   /**
    * Hide mobile nav on same-page/hash links
    */
