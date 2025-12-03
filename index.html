@@ -605,6 +605,148 @@
 
     </section><!-- /Services Section -->
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <h2 class="section-title">Susisiekite su manimi</h2>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Adresas</h3>
+                  <p>Vilnius, Lietuva</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Telefono numeris</h3>
+                  <p><a href="tel:+37065123456">+370 651 23 456</a></p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>El. pašto adresas</h3>
+                  <p><a href="mailto:emilis@example.com">emilis@example.com</a></p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+            <form action="#" method="post" id="contact-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Vardas</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="lastname-field" class="pb-2">Pavardė</label>
+                  <input type="text" name="lastname" id="lastname-field" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">El. paštas</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone-field" class="pb-2">Telefono numeris</label>
+                  <input type="tel" class="form-control" name="phone" id="phone-field" required>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="address-field" class="pb-2">Adresas</label>
+                  <input type="text" class="form-control" name="address" id="address-field" required>
+                </div>
+
+                <!-- Rating Questions -->
+                <div class="col-md-12">
+                  <fieldset class="rating-fieldset">
+                    <legend class="pb-2">Kiek stipriai jums patinka Tadas Pitas?</legend>
+                    <div class="rating-group">
+                      <label><input type="radio" name="rating1" value="1" required> 1</label>
+                      <label><input type="radio" name="rating1" value="2"> 2</label>
+                      <label><input type="radio" name="rating1" value="3"> 3</label>
+                      <label><input type="radio" name="rating1" value="4"> 4</label>
+                      <label><input type="radio" name="rating1" value="5"> 5</label>
+                      <label><input type="radio" name="rating1" value="6"> 6</label>
+                      <label><input type="radio" name="rating1" value="7"> 7</label>
+                      <label><input type="radio" name="rating1" value="8"> 8</label>
+                      <label><input type="radio" name="rating1" value="9"> 9</label>
+                      <label><input type="radio" name="rating1" value="10"> 10</label>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="col-md-12">
+                  <fieldset class="rating-fieldset">
+                    <legend class="pb-2">Įvertinkite šį puslapį</legend>
+                    <div class="rating-group">
+                      <label><input type="radio" name="rating2" value="1" required> 1</label>
+                      <label><input type="radio" name="rating2" value="2"> 2</label>
+                      <label><input type="radio" name="rating2" value="3"> 3</label>
+                      <label><input type="radio" name="rating2" value="4"> 4</label>
+                      <label><input type="radio" name="rating2" value="5"> 5</label>
+                      <label><input type="radio" name="rating2" value="6"> 6</label>
+                      <label><input type="radio" name="rating2" value="7"> 7</label>
+                      <label><input type="radio" name="rating2" value="8"> 8</label>
+                      <label><input type="radio" name="rating2" value="9"> 9</label>
+                      <label><input type="radio" name="rating2" value="10"> 10</label>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <!-- Slider and Text Fields -->
+                <div class="col-md-12">
+                  <label for="slider-field" class="pb-2">Kaip šiandien jaučiatės?</label>
+                  <input type="range" name="slider" id="slider-field" class="form-range" min="1" max="10" required>
+                  <small class="form-text">Reikšmė: <span id="slider-value">5</span></small>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="expiry-date-field" class="pb-2">Jūsų gimimo data</label>
+                  <input type="date" class="form-control" name="expiry_date" id="expiry-date-field" required>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="comment-field" class="pb-2">Papildomas tekstinis laukas / komentaras</label>
+                  <textarea class="form-control" name="comment" rows="4" id="comment-field"></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading" style="display: none;">Siunčiama...</div>
+                  <div class="error-message" style="display: none;"></div>
+                  <div class="sent-message" style="display: none;">Jūsų žinutė buvo sėkmingai išsiųsta. Dėkui!</div>
+
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
   </main>
 
   <!-- Scroll Top -->
@@ -627,7 +769,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-\
+  <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
